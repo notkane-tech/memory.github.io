@@ -1,4 +1,4 @@
- const cardsArray = [
+const cardsArray = [
     { name: 'A', image: '🦁' },
     { name: 'B', image: '🐯' },
     { name: 'C', image: '🐵' },
@@ -44,9 +44,9 @@ function createBoard() {
 // Flip card
 function flipCard() {
     if (lockBoard) return;
-    if (this === firstCard) return; // Prevent double clicking the same card
+    if (this === firstCard) return; // Prevent double-clicking the same card
     
-    this.classList.add('flip');
+    this.classList.add('flip'); // Adds the 'flip' class to rotate the card
     
     if (!firstCard) {
         firstCard = this;
@@ -133,3 +133,4 @@ function startGame() {
 }
 
 startGame();
+
